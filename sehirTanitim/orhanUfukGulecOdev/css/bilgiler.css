@@ -1,0 +1,117 @@
+﻿/*SOL MENU*/
+.menu_simple ul {
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+    .menu_simple ul li a {
+        text-decoration: none;
+        color: #3366ff;
+        padding: 10px 11px;
+        background-color: white;
+        display: block;
+        margin-bottom: 5px;
+        box-shadow: 0px 10px 10px -12px grey;
+    }
+
+        .menu_simple ul li a:hover, .menu_simple ul li .current {
+            color: black;
+        }
+/*Sözler*/
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: cornflowerblue;
+}
+
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+    #mySidenav a:hover {
+        left: 0;
+    }
+
+#about {
+    top: 20px;
+    background-color: #2196F3;
+}

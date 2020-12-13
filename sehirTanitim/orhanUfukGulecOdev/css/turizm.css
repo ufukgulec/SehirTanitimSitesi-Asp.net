@@ -1,0 +1,88 @@
+﻿.filterDiv {
+    float: left;
+    color: #ffffff;
+    width: 33%;
+    height: 100px;
+    /*    line-height: 100px;*/
+    text-align: center;
+    margin: 0px;
+    border: 1px solid white;
+    display: none;
+}
+
+.show {
+    display: block;
+    height: auto;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+    width: auto;
+    border: 0.5px solid black;
+    outline: none;
+    padding: 2px 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #ddd;
+    }
+
+    .btn.active {
+        background-color: #666;
+        color: white;
+    }
+
+@media screen and (max-width: 600px) {
+    .filterDiv {
+        width: 100%;
+    }
+}
+/*DÖNEN KARTLAR*/
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 450px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/* KARTLAR ÖN YÜZÜ*/
+.flip-card-front {
+    color: black;
+    text-align: center;
+    line-height: 50px;
+}
+/* KARTLAR ARKA YÜZÜ*/
+.flip-card-back {
+    padding: 5px;
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}

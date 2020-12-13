@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="orhanUfukGulecOdev.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tokat</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/master.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="site-limit">
+        <%--Banner--%>
+        <div class="header">
+            <a href="Anasayfa.aspx">
+                <img id="logo" src="../images/tokat.png" alt="TokatBelediyesi" /></a>
+            <a href="https://www.youtube.com/watch?v=JIO5li-IZUA" target="_blank" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+            <img id="ata" src="../images/ataturk.png" />
+        </div>
+        <%--Banner Bitis--%>
+
+        <%--Menu--%>
+        <div class="topnav" id="myTopnav">
+            <center>
+                <a href="bilgiler.aspx">GENEL BİLGİLER</a>
+                <a href="kultur.aspx">KÜLTÜR</a>
+                <a href="turizm.aspx">TURİZM</a>
+                <a href="urunler.aspx">MAĞAZA</a>
+                <a href="iletisim.aspx">İLETİŞİM</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </center>
+        </div>
+        <%--Menu Bitis--%>
+
+        <%--Icerik--%>
+        <div class="row" style="background-color: transparent">
+            <div class="content" style="background-color: transparent">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+
+            </div>
+        </div>
+        <%--Icerik Bitis--%>
+    </div>
+    <%--Footer--%>
+    <div class="footer">
+        <div class="column üc">
+            <h3>Hızlı Erişim</h3>
+            <a href="Anasayfa.aspx">Anasayfa</a><br />
+            <a href="bilgiler.aspx">Genel Bilgiler</a><br />
+            <a href="onemliKisiler.aspx">Önemli Kişiler</a><br />
+            <a href="kultur.aspx">Kültür</a><br />
+            <a href="turizm.aspx">Turizm</a><br />
+            <a href="urunler.aspx">Mağaza</a><br />
+            <a href="iletisim.aspx">İletişim</a><br />
+            <a href="sikayet.aspx">Şikayet Formu</a><br />
+            <a href="sikayetlereBak.aspx">Şikayetler</a><br />
+        </div>
+        <div class="column üc">
+            <h3>WEB PROGRAMLAMA ÖDEVİ</h3>
+            <p>Orhan Ufuk Güleç</p>
+        </div>
+        <div class="column üc" style="padding-left: 50px;">
+            <h3>ASP.NET & SQL</h3>
+            <a href="http://www.odev.somee.com/Anasayfa.aspx">Demo</a>
+        </div>
+
+    </div>
+    <%--Footer Bitis--%>
+
+    <script src="js/master.js"></script>
+
+</body>
+</html>

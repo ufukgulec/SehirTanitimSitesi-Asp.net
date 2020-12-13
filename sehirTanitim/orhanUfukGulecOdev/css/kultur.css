@@ -1,0 +1,38 @@
+﻿.card {
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.foto {
+}
+
+.price {
+    color: grey;
+    font-size: 15px;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.card a {
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: linear-gradient(to bottom right, #576270 0%, #3366ff 100%);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    float: right;
+}
+
+    .card a:hover {
+        opacity: 0.9;
+    }

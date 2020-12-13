@@ -1,0 +1,13 @@
+﻿* {
+    margin: 0;
+}
+
+.detay {
+    border: 3px solid #3366ff;
+    border-radius: 20px;
+    margin-bottom: 2px;
+}
+
+    .detay h5 {
+        color: grey;
+    }

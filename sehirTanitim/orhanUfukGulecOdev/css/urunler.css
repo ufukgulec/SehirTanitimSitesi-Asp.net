@@ -1,0 +1,33 @@
+﻿.resim {
+    width: 200px;
+    height: 200px;
+    vertical-align: baseline;
+}
+
+.icerik h4 {
+    color: grey;
+}
+
+.icerik a {
+    border-radius: 50px;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: linear-gradient(to bottom right, #576270 0%, #3366ff 100%);
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    font-size: 18px;
+    text-decoration: none;
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        text-align: center;
+    }
+    .icerik a{
+        width:100%;
+    }
+}
